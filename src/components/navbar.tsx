@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="flex gap-6 items-center">
         <ol className="text-white font-sans">Movie</ol>
         <ol className="text-white font-sans">Genre</ol>
-        <Button className="text-white font-sans size-auto bg-violet-900">
+        <Button className="text-white font-sans size-auto bg-violet-800 hover:bg-indigo-500">
           <LogIn className="mr-2 h-4 w-4" /> Login
         </Button>
       </div>

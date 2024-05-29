@@ -21,10 +21,10 @@ async function Movies() {
     <div className="min-h-screen max-w-full">
       <Navbar />
 
-      <div className="flex flex-wrap gap-4 justify-center mt-8">
+      <div className="flex flex-wrap gap-4 justify-center my-8">
         {movies.map((movie: any) => (
           <div key={movie.id}>
-            <Card name={movie.title} date={movie.release_date} image={`${urlImageMovie}/${movie.poster_path}`} />
+            <Card name={movie.title} date={movie.release_date} rating={movie.vote_average} image={`${urlImageMovie}/${movie.poster_path}`} />
           </div>
         ))}
       </div>
