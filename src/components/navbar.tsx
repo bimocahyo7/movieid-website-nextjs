@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-slate-800 h-14 flex justify-between px-8 items-center gap-7">
+    <nav className="bg-slate-800 h-14 flex justify-between px-8 items-center gap-7 ">
       <Link href={"/"}>
         <h1 className="font-bold text-white text-xl">MovieID</h1>
       </Link>
@@ -16,7 +16,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex gap-6 items-center">
-        <ol className="text-white font-sans">Movie</ol>
+        <ol className="text-white font-sans">Upcoming</ol>
         <ol className="text-white font-sans">Genre</ol>
         <Button className="text-white font-sans size-auto bg-violet-800 hover:bg-indigo-500">
           <LogIn className="mr-2 h-4 w-4" /> Login

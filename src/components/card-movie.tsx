@@ -15,7 +15,7 @@ function Card({ name, image, date, rating }: CardProps) {
   const formatedDate = dateEdit.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 
   return (
-    <div className="overflow-hidden w-40 h-80 shadow-md rounded-lg">
+    <div className="overflow-hidden w-40 h-80 shadow-md rounded-lg bg-white">
       <Image src={image} alt={name} width={300} height={300} className="w-40 h-2/3 object-cover" />
       <div className="px-3 pt-2">
         <h3 className="text-base font-semibold text-wrap leading-tight">{name}</h3>

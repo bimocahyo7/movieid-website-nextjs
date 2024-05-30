@@ -21,10 +21,10 @@ async function Movies() {
   const urlImageMovie = "https://image.tmdb.org/t/p/original/";
 
   return (
-    <div className="min-h-screen max-w-full">
+    <div className="min-h-screen max-w-full bg-slate-300">
       <Navbar />
 
-      <div className="flex flex-wrap gap-4 justify-center my-8">
+      <div className="flex flex-wrap gap-4 justify-center py-8">
         {movies.map((movie: any) => (
           <div key={movie.id}>
             <Link href={`/movie/${movie.id}/`}>
