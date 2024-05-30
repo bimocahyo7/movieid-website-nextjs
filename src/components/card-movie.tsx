@@ -6,10 +6,9 @@ type CardProps = {
   name: string;
   image: string;
   date: string;
-  rating: number;
 };
 
-function Card({ name, image, date, rating }: CardProps) {
+function Card({ name, image, date }: CardProps) {
   // Change format date
   const dateEdit = new Date(date);
   const formatedDate = dateEdit.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
@@ -20,10 +19,6 @@ function Card({ name, image, date, rating }: CardProps) {
       <div className="px-3 pt-2">
         <h3 className="text-base font-semibold text-wrap leading-tight">{name}</h3>
         <p className="text-sm pt-1 text-slate-500">{formatedDate}</p>
-        {/* <div className="flex">
-          <Star fill="gold" strokeWidth={0} />
-          <p>{rating}</p>
-        </div> */}
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import Card from "@/components/card-movie";
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Link from "next/link";
 
@@ -28,16 +29,13 @@ async function Movies() {
         {movies.map((movie: any) => (
           <div key={movie.id}>
             <Link href={`/movie/${movie.id}/`}>
-              <Card
-                name={movie.title}
-                date={movie.release_date}
-                rating={movie.vote_average}
-                image={`${urlImageMovie}/${movie.poster_path}`}
-              />
+              <Card name={movie.title} date={movie.release_date} image={`${urlImageMovie}/${movie.poster_path}`} />
             </Link>
           </div>
         ))}
       </div>
+
+      <Footer />
     </div>
   );
 }
